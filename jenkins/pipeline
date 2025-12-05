@@ -38,7 +38,7 @@ pipeline {
                         // 在缺少 local.properties 的情况下指定 Android SDK 路径
                         def propsFile = "${WORKSPACE}/local.properties"
                         if (!fileExists(propsFile)) {
-                            writeFile file: propsFile, text: 'sdk.dir=/root/Android/Sdk'
+                            writeFile file: propsFile, text: 'sdk.dir=/opt/Android/SDK'
                         }
                         // 赋予 gradlew 可执行权限
                         sh 'chmod +x gradlew'
