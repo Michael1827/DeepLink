@@ -12,7 +12,7 @@ pipeline {
      */
     environment {
         // Git 仓库地址（可根据需要修改）
-        GIT_REPO = 'https://github.com/yuuouu/DeepLink.git'
+        GIT_REPO = 'https://github.com/Michael1827/DeepLink.git'
         // 构建类型（debug 或 release），对应 Gradle task 名称
         MATRIX = "debug"
         // 标记上传和通知开关
